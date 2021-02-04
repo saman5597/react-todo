@@ -6,11 +6,12 @@ function TodoList({todos, filteredTodos, setTodos}) {
         <div className="todo-container">
             <ul className="todo-list">
                 {   
+                    filteredTodos.length ? 
                     filteredTodos.map(todo => <Todo setTodos={setTodos} 
                         todos={todos} 
                         todo={todo} 
                         key={todo.id} 
-                        />)
+                        />) : null    
                 }
             </ul>
         </div>
