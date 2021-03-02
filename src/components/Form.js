@@ -35,8 +35,4 @@ function Form({inputText, setInputText, todos, setTodos, setStatus}) {
     )
 }
 
-const styleSheet = {
-    display: "none"
-}
-
 export default Form
